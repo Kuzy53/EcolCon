@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background: #f6f5f7;
-    display: flex;
+.app {
+        display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -15,12 +13,12 @@ body {
     margin: 0;
 }
 
-h1 {
+.app h1 {
     font-weight: bold;
     margin: 0;
 }
 
-p {
+.app p {
     font-size: 14px;
     font-weight: 100;
     line-height: 20px;
@@ -28,11 +26,11 @@ p {
     margin: 20px 0 30px;
 }
 
-span {
+.app span {
     font-size: 12px;
 }
 
-a {
+.app a {
     color: #333;
     font-size: 14px;
     text-decoration: none;
