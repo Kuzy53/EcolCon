@@ -20,8 +20,10 @@ min-width: 200px;
 min-height: 200px;
 padding: 2.5%;
 }
-img {
-    max-width: 60%;
+.blockImg {
+    width: 60%;
+    height: 68px;
+    min-width: 200px;
 }
 .titles {
     max-width: 100%;

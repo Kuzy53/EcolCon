@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './AdditionalInfo.module.css';
 import SelectEvents from './EventFilter';
 import BloksEvents from './BloksEvents';
+import Footer from './Footer';
 const AdditionalInfo = () => {
 
 
@@ -10,6 +11,7 @@ const AdditionalInfo = () => {
   <div className={styles.container} >
   <SelectEvents/>
   <BloksEvents/>
+  <Footer/>
   </div>
 
 </section>

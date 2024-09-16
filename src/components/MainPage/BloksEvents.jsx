@@ -9,7 +9,7 @@ const BloksEvents = () => {
 <>
 <div className={styles.container} >
     <div className={styles.block}>
-        <img src="src/assets/main/block1.png" alt="" />
+        <img className={styles.blockImg}  src="src/assets/main/block1.png" alt="" />
         <div className={styles.titles} >
             <div className={styles.titleItem} >IT</div>
             <div className={styles.titleItem} >Экология</div>
@@ -21,7 +21,7 @@ const BloksEvents = () => {
     </div>
 
     <div className={styles.block}>
-        <img src="src/assets/main/block2.png" alt="" />
+        <img  className={styles.blockImg} src="src/assets/main/block2.png" alt="" />
         <div className={styles.titles} >
             <div className={styles.titleItem} >IT</div>
             <div className={styles.titleItem} >Экология</div>

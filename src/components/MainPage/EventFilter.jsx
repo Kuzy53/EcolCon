@@ -29,7 +29,7 @@ const EventFilter = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h3>Мероприятия</h3>
+        <h3 className={styles.title} >Мероприятия</h3>
         <button className={styles.filterButton}>Фильтры</button>
       </div>
       <div className={styles.filters}>

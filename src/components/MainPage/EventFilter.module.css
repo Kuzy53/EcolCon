@@ -6,14 +6,28 @@
     background-repeat: no-repeat;
     padding: 20px;
     /* border-radius: 40px; */
-    width: 600px;
+    width: 100%;
     font-family: Arial, sans-serif;
     display: flex;
     align-items: space-between;
     flex-direction: column;
+    position: relative;
+        /* background-color: #9DAFED; */
+
   }
-  h3 {
+.title {
     color: white;
+
+font-family: 'Montserrat Alternates';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 78px;
+/* identical to box height */
+letter-spacing: 0.07em;
+
+color: #4D5A89;
+
 
   }
   .header {
@@ -29,7 +43,9 @@
     border: none;
     padding: 16px 35px;
     cursor: pointer;
-    transform: translate(-85px, -10px);
+position: absolute;
+top: 0;
+right: 22%;
 
 border-radius: 40px;
 
