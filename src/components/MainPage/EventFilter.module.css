@@ -52,22 +52,26 @@ border-radius: 40px;
   }
   
   .filters {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin-bottom: 20px;
   }
   
   .select {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 1px solid #ccc;
+    background: white;
   }
   
   .input {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 1px solid #ccc;
+    background: white;
   }
   
   .searchButton {
