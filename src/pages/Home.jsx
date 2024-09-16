@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import NewsSlider from '../components/MainPage/NewsSlider';
-
+import AdditionalInfo from '../components/MainPage/AdditionalInfo';
 const slides = [
   {
     image: 'https://example.com/image1.jpg',
@@ -32,6 +32,7 @@ const Home = () => {
         <main>
           <NewsSlider slides={slides} />
         </main>
+        <AdditionalInfo/>
     </>
   )
 }
