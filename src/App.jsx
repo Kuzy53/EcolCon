@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import FormPage from './pages/formPage/FormPage';
 import ProfilePage from './pages/profilePage/ProfilePage';
-
+import './App.css';
 
 const App = () => {
 
