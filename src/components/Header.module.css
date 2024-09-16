@@ -4,4 +4,47 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
+}
+.logo {
+    max-width: 140px;
+}
+.navList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.navItem {
+    margin: 0 10px;
+    color: black ;
+}
+.navLink {
+    /* новости */
+
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 43px;
+
+color: #000000;
+
+transition: 0.2s;
+
+
+
+    color: black;
+}
+.navLink:hover {
+    color: #5A8264;
+}
+.regBtn {
+
+padding: 0 8px;
+border: 1px solid #000000;
+border-radius: 40px;
+
 }

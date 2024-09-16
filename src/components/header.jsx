@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <img src='assets/logo.png' className={styles.logo}></img>
+        <img src='src/assets/logo.png' className={styles.logo}></img>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <a href="#" className={styles.navLink}>новости</a>
@@ -25,6 +25,6 @@ const Header = () => {
       </nav>
     </header>
   );
-};е 
+};
 
 export default Header
