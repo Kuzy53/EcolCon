@@ -1,4 +1,31 @@
 .container {
     padding: 5% 15%;
     background: #E2F7FB;
+    
 }
+.additionalInfo {
+    position: relative;
+    overflow: hidden;
+}
+.blot1 {
+position: absolute;
+z-index: 0;
+top: 150px;
+left: 50px;
+width: 250px;
+}
+
+.blot2 {
+    position: absolute;
+    z-index: 0;
+    top: 250px;
+    right: 50px;
+    width: 250px;
+    }
+    .blot3 {
+        position: absolute;
+        z-index: 0;
+        bottom: -50px;
+        right: -70px;
+        width: 250px;
+        }

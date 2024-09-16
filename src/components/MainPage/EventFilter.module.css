@@ -13,6 +13,7 @@
     flex-direction: column;
     position: relative;
         /* background-color: #9DAFED; */
+        z-index: 1;
 
   }
 .title {
@@ -75,7 +76,7 @@ border-radius: 40px;
   }
   
   .searchButton {
-    transform: translate(7px, 35px);
+    transform: translate(7px, 45px);
     background-color: #687ad1;
     color: white;
     border: none;

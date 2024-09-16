@@ -1,8 +1,9 @@
 .container {
     /* Rectangle 34 */
-    margin-top: 45px;
+    margin: 10% 0;
     display: flex;
     justify-content: space-between;
+    
 }
 .block {
 
@@ -19,6 +20,7 @@ height: 372px;
 min-width: 200px;
 min-height: 200px;
 padding: 2.5%;
+z-index: 2;
 }
 .blockImg {
     width: 60%;
