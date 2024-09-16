@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-
-import './App.css'
+import FormPage from './pages/formPage/FormPage';
 
 
 const App = () => {
@@ -11,6 +10,7 @@ const App = () => {
     <>
     <Routes>
      <Route element={<Home />} path="/" />
+     <Route element={<FormPage />} path="/FormPage" />
      </Routes>
     </>
   )
