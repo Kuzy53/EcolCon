@@ -1,0 +1,174 @@
+.container {
+    padding: 5% 10% 0 10%;
+    background: #E2F6FB;
+}
+.filterTags {
+    display: flex;
+    flex-wrap: wrap;
+}
+.filterTag {
+    margin: 20px;
+    background: #6A80CC;
+border-radius: 50px;
+padding: 15px 30px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+line-height: 39px;
+/* identical to box height */
+position: relative;
+color: #FFFFFF;
+}
+.filterTagClose {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.news {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsItem {
+    margin: 50px 0;
+    max-width: 1000px;
+    cursor: pointer;
+ display: flex;
+}
+.newsItemImg {
+
+    width: 350px;
+    height: 350px;
+}
+.newsItemTextBlock {
+padding: 5%;
+}
+.newsItemTextBlock {
+    position: relative;
+
+
+/*  */
+}
+
+.newsItemTitle {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 59px;
+letter-spacing: 0.03em;
+
+color: #000000;
+font-size: 38px;
+}
+
+.newsItemText {
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 29px;
+
+color: #000000;
+
+
+}
+.newsItemTags {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    right: 0;
+}
+.newsItemTag {
+    margin: 0 10px ;
+    /* #отходы */
+
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 39px;
+/* identical to box height */
+
+color: #000000;
+
+
+}
+
+
+.containerFooter {
+    /* Subtract */
+
+
+
+border: 1px dashed #5C6EAD;
+
+    margin-top: 50px;
+    height: 150px;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    text-align: center;
+    font-size: 28px;
+    /* Присоединяйся к нам в сотсетях */
+
+
+font-family: 'Montserrat Alternates';
+font-style: normal;
+font-weight: 500;
+/* line-height: 71px; */
+/* identical to box height */
+
+color: #154921;
+
+
+}
+.links {
+    max-width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.linkImg {
+    max-width: 40px;
+    margin: 0 0 0 29px;
+}
+a {
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+
+line-height: 39px;
+/* identical to box height */
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+
+
+}
+.chatBotLink {
+    /* Rounded rectangle */
+
+
+background: #D59FEE;
+border-radius: 50px;
+padding: 2px 14px;
+}

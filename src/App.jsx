@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import FormPage from './pages/formPage/FormPage';
 import ProfilePage from './pages/profilePage/ProfilePage';
+import NewsPage from './pages/NewsPage/NewsPage';
+
 import './App.css';
 import Header from './components/Header';
 
@@ -13,6 +15,8 @@ const App = () => {
     <Header></Header>
     <Routes>
      <Route element={<Home />} path="/" />
+     <Route element={<NewsPage />} path="/news" />
+
      <Route element={<FormPage />} path="/FormPage" />
      <Route element={<ProfilePage />} path="/profile" />
      </Routes>
