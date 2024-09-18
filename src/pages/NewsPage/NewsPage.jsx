@@ -53,7 +53,7 @@ const NewsPage = () => {
         <div className={styles.filterTags}>
           {tags.map((tag, index) => (
             <div className={styles.filterTag} key={index}>#{tag}
-              <img onClick={() => onDeleteTag(tag)} className={styles.filterTagClose} src="src/assets/icons/X.png" alt="" />
+              <p onClick={() => onDeleteTag(tag)} className={styles.filterTagClose} alt="">X</p>
             </div>
           ))}
         </div>

@@ -22,11 +22,17 @@ color: #FFFFFF;
 }
 .filterTagClose {
     cursor: pointer;
-    width: 15px;
-    height: 15px;
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: -12px;
+    right: -13px;
+    color: #105620;
+    padding: 0 10px;
+    border: 3px #E2F6FB solid;
+    border-radius: 100px;
+    background-color: #E2F6FB;
+    font-weight: 600;
+    font-size: 24px;
+    height: 40px;
 }
 
 .news {
@@ -40,6 +46,10 @@ color: #FFFFFF;
     max-width: 1000px;
     cursor: pointer;
  display: flex;
+ border-radius: 30px;
+ background-color: #FFFFFF;
+ box-shadow: 0px 4px 4px 0px #00000040 inset;
+
 }
 .newsItemImg {
 
@@ -86,7 +96,7 @@ color: #000000;
     position: absolute;
     display: flex;
     justify-content: space-around;
-    bottom: 0;
+    bottom: 50px;
     right: 0;
 }
 .newsItemTag {
