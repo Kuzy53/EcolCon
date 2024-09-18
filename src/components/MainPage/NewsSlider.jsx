@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './NewsSlider.module.css';
+import SliderBack from '/sliderBack.svg'
 
 
 const NewsSlider = ({ slides }) => {
@@ -21,10 +22,25 @@ const NewsSlider = ({ slides }) => {
             key={index}
             className={`${styles.slide} ${index === currentIndex ? styles.active : ''}`}
           >
-            <img src={slide.image} alt={slide.alt} />
-            <p>{slide.caption}</p>
-            <p>{slide.date}</p>
-            <p>{slide.location}</p>
+            {/* <img src={SliderBack} className={styles.slideImg} alt="SliderBack" /> */}
+            <div className={styles.slideContainer}>
+              <div className={styles.slideBlock}>
+              <h1>{slide.caption}</h1>
+              <div className={styles.slideFlex}>
+                <h2>{slide.keyWords}</h2>
+                <p>{slide.year}</p>
+              </div>
+              </div>
+            
+            </div>
+
+            <div className={styles.slideInfo}>
+              <button className={styles.slideBtn}>Зарегистрироваться</button>
+              <div className={styles.slideInfoContainer}>
+                <h1>Дата: {slide.date}</h1>
+                <h2>{slide.location}</h2>
+              </div>
+            </div>
           </div>
         ))}
       </div>
