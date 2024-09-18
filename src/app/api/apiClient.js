@@ -10,6 +10,7 @@ export const authApi = createApi({
         headers.set('Authorization', `Token ${token}`);
       }
       
+      
       return headers;
     },
   }),
@@ -22,10 +23,10 @@ export const authApi = createApi({
       }),
     }),
     register: builder.mutation({
-      query: ({ email, password }) => ({
-        url: 'register/',
-        body: { email, password },
+      query: ({ email, full_name, vk_link, password }) => ({
+        url: 'registration/',
         method: 'POST',
+        body: { email, full_name, vk_link, password, image: null },
       }),
     }),
     logoutUser: builder.mutation({

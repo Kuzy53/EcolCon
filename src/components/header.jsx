@@ -1,4 +1,6 @@
 import styles from './Header.module.css';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   return (
@@ -16,7 +18,7 @@ const Header = () => {
             <a href="#" className={styles.navLink}>организация</a>
           </li>
           <li className={styles.navItem}>
-            <a href="#" className={styles.navLink}>войти</a>
+          <Link to={'/formPage'} href="#" className={styles.navLink}>войти</Link>
           </li>
           <li className={`${styles.navItem} ${styles.regBtn}`}>
             <a href="#" className={styles.navLink}>зарегистрироваться</a>
