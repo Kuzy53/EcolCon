@@ -13,20 +13,21 @@ const FormPage = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    email: '',
+    username: '',
     password: '',
-    full_name: '', // Поле "ФИО"
-    vk_link: '',   // Поле для ВК ссылки
-    avatar: '',    // Поле для аватара
+    full_name: '',
+    vk_link: '',  
+    avatar: '',    
   });
 
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, files } = e.target;
+    
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: files ? files[0] : value,
     });
   };
 
@@ -36,10 +37,10 @@ const FormPage = () => {
 
   const onSubmitLogin = async (e) => {
     e.preventDefault();
-    const { email, password } = formData;
+    const { username, password } = formData;
 
     try {
-      const response = await loginUser({ email, password }).unwrap();
+      const response = await loginUser({ username, password }).unwrap();
       const token = response.token;
       localStorage.setItem('jwt', token);
       dispatch(setToken(token));
@@ -81,40 +82,46 @@ const FormPage = () => {
         <div className={styles.formFlex}>
           {/* Форма регистрации */}
           <div className={`${styles.formContainer} ${styles.signUpContainer}`}>
-            <form className={styles.form} onSubmit={onSubmitRegister}>
-              <h1>Регистрация</h1>
-              <input
-                type="text"
-                placeholder="ФИО"
-                name="full_name"
-                value={formData.full_name}
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                placeholder="ВК: id"
-                name="vk_link"
-                value={formData.vk_link}
-                onChange={handleChange}
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              <input
-                type="password"
-                placeholder="Пароль"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-              />
-              <button className={styles.signBtn} type="submit" disabled={isRegisterLoading}>
-                {isRegisterLoading ? 'Регистрация...' : 'Зарегистрироваться'}
-              </button>
-            </form>
+          <form className={styles.form} onSubmit={onSubmitRegister}>
+            <h1>Регистрация</h1>
+            <input
+              type="text"
+              placeholder="ФИО"
+              name="full_name"
+              value={formData.full_name}
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              placeholder="ВК: id"
+              name="vk_link"
+              value={formData.vk_link}
+              onChange={handleChange}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            <input
+              type="password"
+              placeholder="Пароль"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+            />
+            <input
+              type="file"
+              name="avatar"
+              accept="image/*"
+              onChange={handleChange}
+            />
+            <button className={styles.signBtn} type="submit" disabled={isRegisterLoading}>
+              {isRegisterLoading ? 'Регистрация...' : 'Зарегистрироваться'}
+            </button>
+</form>
           </div>
 
           {/* Форма авторизации */}
@@ -124,8 +131,8 @@ const FormPage = () => {
               <input
                 type="email"
                 placeholder="Email"
-                name="email"
-                value={formData.email}
+                name="username"
+                value={formData.username}
                 onChange={handleChange}
               />
               <input
