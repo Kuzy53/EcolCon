@@ -2,6 +2,10 @@
     position: relative;
     width: 100%;
     height: 700px;
+    background: url(/public/slideFon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 350% center;
   }
   
   .slides {
