@@ -10,23 +10,35 @@ export const authApi = createApi({
         headers.set('Authorization', `Token ${token}`);
       }
       
+      
       return headers;
     },
   }),
   endpoints: (builder) => ({
     login: builder.mutation({
-      query: ({ email, password }) => ({
+      query: ({ username, password }) => ({
         url: 'login/',
         method: 'POST',
-        body: { email, password },
+        body: { username, password },
       }),
     }),
     register: builder.mutation({
-      query: ({ email, password }) => ({
-        url: 'register/',
-        body: { email, password },
-        method: 'POST',
-      }),
+      query: ({ email, full_name, vk_link, password, avatar }) => {
+        const formData = new FormData();
+        formData.append('email', email);
+        formData.append('full_name', full_name);
+        formData.append('vk_link', vk_link);
+        formData.append('password', password);
+        if (avatar) {
+          formData.append('image', avatar); 
+        }
+        
+        return {
+          url: 'registration/',
+          method: 'POST',
+          body: formData,
+        };
+      },
     }),
     logoutUser: builder.mutation({
       query: () => ({

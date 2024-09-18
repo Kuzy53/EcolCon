@@ -29,3 +29,98 @@ width: 250px;
         right: -70px;
         width: 250px;
         }
+
+
+
+
+
+        /* ////////////////// */
+
+
+        .news {
+            /* margin-top: 40px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .newsItem {
+            margin: 50px 0;
+            max-width: 1000px;
+            cursor: pointer;
+         display: flex;
+         border-radius: 30px;
+         background-color: #FFFFFF;
+         box-shadow: 0px 4px 4px 0px #00000040 inset;
+        
+        }
+        .newsItemImg {
+        
+            width: 350px;
+            height: 350px;
+        }
+        .newsItemTextBlock {
+        padding: 5%;
+        }
+        .newsItemTextBlock {
+            position: relative;
+        
+        
+        /*  */
+        }
+        
+        .newsItemTitle {
+            font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 59px;
+        letter-spacing: 0.03em;
+        
+        color: #000000;
+        font-size: 38px;
+        }
+        
+        .newsItemText {
+        
+        
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 29px;
+        
+        color: #000000;
+        
+        
+        }
+        .newsItemTags {
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            bottom: 50px;
+            right: 0;
+        }
+        .newsItemTag {
+            margin: 0 10px ;
+            /* #отходы */
+        
+        
+        
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 39px;
+        /* identical to box height */
+        
+        color: #000000;
+        
+        
+        }
+
+        .newTitle {
+            font-size: 64px;
+            font-weight: 600;
+            color: #0B6820;
+        }
