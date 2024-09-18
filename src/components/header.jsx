@@ -6,10 +6,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <img src='src/assets/logo.png' className={styles.logo}></img>
+      <Link to={'/'} className={styles.logo}><img src='src/assets/logo.png' className={styles.logo}></img></Link>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
-            <a href="#" className={styles.navLink}>новости</a>
+          <Link to={'/news'} href="#" className={styles.navLink}>новости</Link>
           </li>
           <li className={styles.navItem}>
             <a href="#" className={styles.navLink}>мероприятия</a>
@@ -21,7 +21,7 @@ const Header = () => {
           <Link to={'/formPage'} href="#" className={styles.navLink}>войти</Link>
           </li>
           <li className={`${styles.navItem} ${styles.regBtn}`}>
-            <a href="#" className={styles.navLink}>зарегистрироваться</a>
+          <Link to={'/formPage'} href="#" className={styles.navLink}>зарегистрироваться</Link>
           </li>
         </ul>
       </nav>
